@@ -1,0 +1,297 @@
+.top {
+  margin-bottom: 12px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filter {
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.filter.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.compose {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 68px;
+  padding: 10px 14px;
+  border-radius: 22px;
+  border: 2px dashed var(--border);
+  background: var(--surface);
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.composeIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: var(--btn-bg);
+  color: var(--on-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.composeText {
+  display: flex;
+  flex-direction: column;
+}
+
+.composeText strong {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.composeText small {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.empty {
+  color: var(--muted);
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.post {
+  border-radius: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.postHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--btn-bg);
+  color: var(--on-accent);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author {
+  display: block;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.time {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.art,
+.ba {
+  position: relative;
+  height: 300px;
+  background: var(--img);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.art svg {
+  display: block;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.ba {
+  user-select: none;
+}
+
+.baLayer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.baLayer svg {
+  display: block;
+}
+
+.baLayer:nth-child(2) {
+  background: var(--img);
+}
+
+.tag {
+  position: absolute;
+  top: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(20, 12, 24, 0.7);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tagL {
+  left: 12px;
+}
+
+.tagR {
+  right: 12px;
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  margin-left: -1.5px;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+}
+
+.postBody {
+  padding: 12px 14px 8px;
+}
+
+.caption {
+  font-size: 14.5px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.postFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.chip {
+  padding: 5px 12px;
+  border-radius: 14px;
+  background: var(--pill);
+  color: var(--highlight);
+  font-size: 12.5px;
+  font-weight: 800;
+}
+
+.like {
+  min-width: 56px;
+  min-height: 44px;
+  padding: 0 10px;
+  border: 0;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.liked {
+  color: var(--highlight);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  border-radius: 20px;
+  border: 2px dashed var(--border);
+  background: var(--surface-2);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.drop:focus-within {
+  outline: 3px solid var(--highlight);
+}
+
+.drop img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+}
+
+.dropHint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.field textarea,
+.field select {
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  min-height: 48px;
+  resize: vertical;
+}

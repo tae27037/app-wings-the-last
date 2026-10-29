@@ -1,0 +1,49 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.12s, opacity 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: var(--btn-bg);
+  color: var(--on-accent);
+}
+
+.soft {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.ghost {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.sm {
+  min-height: 44px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.full {
+  width: 100%;
+}

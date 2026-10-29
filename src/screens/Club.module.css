@@ -1,0 +1,163 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  padding: 22px 20px;
+  border-radius: var(--radius-lg);
+  background: var(--hero);
+  border: 1px solid var(--border);
+}
+
+.small {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.level {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.big {
+  margin: 4px 0 12px;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--highlight);
+}
+
+.big span {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.bar {
+  height: 10px;
+  border-radius: 5px;
+  background: rgba(120, 100, 130, 0.25);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: var(--highlight);
+  transition: width 0.3s;
+}
+
+.checkin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.h3 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.early {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 22px;
+  background: var(--surface-2);
+  border: 1px solid transparent;
+}
+
+.early.unlocked {
+  border-color: var(--highlight);
+}
+
+.earlyIcon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: var(--surface);
+  color: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--highlight);
+}
+
+.h2 {
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 64px;
+  padding: 10px 14px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.rowIcon {
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  background: var(--pill);
+  color: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowText {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowText strong {
+  font-size: 14.5px;
+  font-weight: 800;
+}
+
+.rowText small {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.pts {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--highlight);
+}

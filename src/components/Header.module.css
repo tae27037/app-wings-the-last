@@ -1,0 +1,78 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: calc(8px + env(safe-area-inset-top)) 12px 8px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.logo span {
+  color: var(--highlight);
+}
+
+.back {
+  width: 44px;
+  height: 44px;
+  margin-left: -10px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.langs {
+  display: flex;
+  background: var(--surface-2);
+  border-radius: 22px;
+  padding: 3px;
+}
+
+.lang {
+  min-width: 44px;
+  height: 38px;
+  border-radius: 19px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.lang.on {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+}
+
+.theme {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

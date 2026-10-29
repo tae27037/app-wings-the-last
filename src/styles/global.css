@@ -1,0 +1,110 @@
+:root {
+  --font: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius-lg: 26px;
+  --radius-md: 20px;
+  --tab-h: 76px;
+}
+
+/* Light theme — plum on lilac */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #efe7ee;
+  --surface: #ffffff;
+  --surface-2: #e8e4ee;
+  --text: #231b2e;
+  --muted: #655f70;
+  --border: #e0d6e4;
+  --accent: #8a3b57;
+  --on-accent: #ffffff;
+  --highlight: #b04a72;
+  --btn-bg: #8a3b57;
+  --topbar: #8a3b57;
+  --hero: linear-gradient(115deg, #ffffff 0%, #f6e9f0 50%, #e6c3d3 100%);
+  --img: linear-gradient(180deg, #eee8f1, #e1d8e7);
+  --pill: #f3e3eb;
+  --shadow: 0 10px 28px rgba(60, 20, 40, 0.18);
+}
+
+/* Dark theme — sand and rose on aubergine */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #17141d;
+  --surface: #221e2b;
+  --surface-2: #2b2634;
+  --text: #f4eee8;
+  --muted: #a8a1b2;
+  --border: #352f40;
+  --accent: #e8c9a8;
+  --on-accent: #2a1e24;
+  --highlight: #dc93ae;
+  --btn-bg: linear-gradient(115deg, #ebd3b4, #e3a6aa);
+  --topbar: #9a5c72;
+  --hero: linear-gradient(115deg, #221e2b 0%, #3a2b36 60%, #5a3f4d 100%);
+  --img: linear-gradient(180deg, #2a2533, #1e1a26);
+  --pill: #3a2b36;
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.25s, color 0.25s;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--highlight);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

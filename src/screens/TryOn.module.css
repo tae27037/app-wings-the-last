@@ -1,0 +1,210 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: linear-gradient(180deg, #d9cfdc, #b9a9c0);
+  border: 1px solid var(--border);
+  touch-action: none;
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+  opacity: 0;
+}
+
+.live {
+  opacity: 1;
+}
+
+.demo {
+  position: absolute;
+  inset: 0;
+}
+
+.head {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: 43%;
+  height: 42%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #e4d3c4;
+}
+
+.shoulders {
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+  width: 84%;
+  height: 60%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #e4d3c4;
+}
+
+.guide {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: 43%;
+  height: 42%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+
+.wigWrap {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  aspect-ratio: 200 / 260;
+  cursor: grab;
+  touch-action: none;
+}
+
+.wigWrap:active {
+  cursor: grabbing;
+}
+
+.wig {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.stageBar {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.note,
+.error {
+  margin-top: 12px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+}
+
+.error {
+  color: var(--highlight);
+}
+
+.controls {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.styles {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 2px 2px 8px;
+  scrollbar-width: none;
+}
+
+.styles::-webkit-scrollbar {
+  display: none;
+}
+
+.styleBtn {
+  flex: none;
+  width: 84px;
+  min-height: 112px;
+  padding: 8px 4px 6px;
+  border-radius: 18px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.styleBtn.on {
+  border-color: var(--highlight);
+  background: var(--pill);
+}
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  border: 3px solid var(--surface);
+  background: var(--c);
+  box-shadow: 0 0 0 1px var(--border);
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swatch.on {
+  box-shadow: 0 0 0 3px var(--highlight);
+}
+
+.orig {
+  color: #fff;
+}
+
+.orig:not(.on) {
+  color: transparent;
+}
+
+.range {
+  width: 100%;
+  min-height: 44px;
+  accent-color: var(--highlight);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 20px;
+  background: var(--surface-2);
+}
+
+.sheetActions {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

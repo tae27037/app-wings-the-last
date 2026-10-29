@@ -1,0 +1,11 @@
+{
+  "name": "Maison Wigs",
+  "short_name": "Maison Wigs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EFE7EE",
+  "theme_color": "#8A3B57",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

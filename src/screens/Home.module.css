@@ -1,0 +1,218 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  overflow: hidden;
+  padding: 22px 8px 0 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--hero);
+}
+
+.heroText {
+  flex: 1;
+  min-width: 0;
+  padding-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: 29px;
+  line-height: 1.06;
+  font-weight: 800;
+  letter-spacing: -0.9px;
+}
+
+.heroSub {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.heroArt {
+  flex: none;
+  width: 118px;
+  margin-right: 4px;
+  align-self: flex-end;
+}
+
+.heroArt svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cta {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 24px;
+  background: var(--btn-bg);
+  color: var(--on-accent);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.points {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  min-height: 56px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-decoration: none;
+}
+
+.pointsIcon {
+  color: var(--highlight);
+  display: flex;
+}
+
+.pointsText {
+  flex: 1;
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.pointsNum {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.h2 {
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  min-height: 150px;
+  border-radius: 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: transform 0.12s;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.cardIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  background: var(--pill);
+  color: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.cardText {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.reminder {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 22px;
+  background: var(--surface-2);
+}
+
+.reminderIcon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: var(--surface);
+  color: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reminderBody {
+  min-width: 0;
+}
+
+.reminderTitle {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.reminderText {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--highlight);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.tip {
+  padding: 18px;
+  border-radius: 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.tipTitle {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--highlight);
+}
+
+.tipText {
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
